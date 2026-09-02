@@ -48,7 +48,7 @@
       <p style="margin: 0; font-size: 14.5px; line-height: 1.6; color: #a7b2b8; text-wrap: pretty;">This is a setup call, not a sales call. We activate your account, load the valuation calculator with your state, and tell you which module to start with.</p>
 
       <div style="border: 1px solid #2a353c; background: #14181a; min-height: 620px; display: flex; flex-direction: column;">
-        <iframe src="{{ calendarUrl }}" frameBorder="0" title="Book your onboarding call" scrolling="no" style="width: 100%; min-height: 620px; flex: 1; border: 0; display: block;"></iframe>
+        <iframe src="{{ calendarUrl }}" frameBorder="0" title="Book your onboarding call" scrolling="no" allow="payment" style="width: 100%; min-height: 620px; flex: 1; border: 0; display: block; background: #fff;"></iframe>
       </div>
     </div>
   </div>
@@ -124,7 +124,7 @@ class Component extends DCLogic {
       email: this.props.email ?? "your inbox",
       price: this.props.price ?? "$497",
       supportEmail: this.props.supportEmail ?? "support@learnminerals.com",
-      calendarUrl: this.props.calendarUrl ?? "https://link.msgsndr.com/widget/booking/REPLACE_WITH_CALENDAR_ID",
+      calendarUrl: this.props.calendarUrl ?? "https://api.leadconnectorhq.com/widget/booking/2kWFix16FH4Forwe9uEo",
       moduleUrl: this.props.moduleUrl ?? "#",
       fieldGuideUrl: this.props.fieldGuideUrl ?? "#",
       faqUrl: this.props.faqUrl ?? "#"
